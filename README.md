@@ -13,13 +13,13 @@ An ESP32-based environmental monitor featuring real-time temperature and humidit
 *Dynamic Alarm: A passive buzzer automatically triggers a subtle alarm if the temperature shifts by 1°C.
 
 -Hardware Requirements: 
-*`ESP32 Development Board`
-*`DHT11 Temperature & Humidity Sensor`
-*`(minimum) 0.96" I2C OLED Display (SSD1306)`
-*`(number of LEDs is not relevant) 16-LED WS2812B NeoPixel Matrix (5V)`
-*`Passive Buzzer`
-*`2x Tactile Push Buttons`
-*`Breadboard & Jumper Wires`
+* `ESP32 Development Board`
+* `DHT11 Temperature & Humidity Sensor`
+* `(minimum) 0.96" I2C OLED Display (SSD1306)`
+* `(number of LEDs is not relevant) 16-LED WS2812B NeoPixel Matrix (5V)`
+* `Passive Buzzer`
+* `2x Tactile Push Buttons`
+* `Breadboard & Jumper Wires`
 
 -Software & Libraries: 
 This project is built using the Arduino IDE. Make sure to install the following dependencies via the Library Manager:
@@ -29,6 +29,6 @@ This project is built using the Arduino IDE. Make sure to install the following 
 * `DHT sensor library` (by Adafruit)
 
 -How It Works: 
-1.`Boot`: Upon startup, the ESP32 initializes the I2C bus, sensors, and display. It takes an initial temperature reading to set the "Alarm Reference" baseline.
-2.`Non-Blocking Logic`: The system uses `millis()` for debouncing buttons and scheduling sensor reads (every 2 seconds), ensuring the UI and button presses remain instantly responsive.
-3.`Internal Logic`: All mathematical comparisons for the alarm and color thresholds are kept strictly in Celsius to maintain system stability. Fahrenheit conversion happens instantly only at the display rendering level.
+1. `Boot`: Upon startup, the ESP32 initializes the I2C bus, sensors, and display. It takes an initial temperature reading to set the "Alarm Reference" baseline.
+2. `Non-Blocking Logic`: The system uses `millis()` for debouncing buttons and scheduling sensor reads (every 2 seconds), ensuring the UI and button presses remain instantly responsive.
+3. `Internal Logic`: All mathematical comparisons for the alarm and color thresholds are kept strictly in Celsius to maintain system stability. Fahrenheit conversion happens instantly only at the display rendering level.
