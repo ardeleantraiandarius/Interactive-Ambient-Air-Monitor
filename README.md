@@ -3,7 +3,9 @@
 An ESP32-based environmental monitor featuring real-time temperature and humidity tracking, a dynamic buzzer alarm, and an interactive WS2812B NeoPixel matrix for ambient visual feedback.
 
 -Features: 
-*Real-Time Monitoring: Reads temperature and humidity using a DHT11 sensor and displays data on a 0.96" OLED screen.
+
+ Real-Time Monitoring: Reads temperature and humidity using a DHT11 sensor and displays data on a 0.96" OLED screen.
+ 
 *Interactive RGB Matrix: 
  A 16-LED WS2812B NeoPixel matrix reflecting the room's temperature. A dedicated push button cycles through 3 modes:
   * `Temp Mode`: Colors react to temperature (Blue for cold, Green for optimal, Red for warm).
